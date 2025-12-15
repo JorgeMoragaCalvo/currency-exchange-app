@@ -28,7 +28,7 @@ export function Input({
         type="number"
         value={value}
         onChange={(e) => onChange(parseFloat(e.target.value) || 0)}
-        onFocus={(e) => e.target.select()}
+        onFocus={(e) => setTimeout(() => e.target.select(), 0)}
         placeholder={placeholder}
         min={min}
         step={step}
